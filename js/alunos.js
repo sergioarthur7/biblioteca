@@ -1,5 +1,3 @@
-'use strict'
-
 const openModal = () => document.getElementById('modal').classList.add('active')
 const openModal2 = () => document.getElementById('modal2').classList.add('active')
 
@@ -159,25 +157,18 @@ const editDelete = (event) => {
 updateTable()
 
 // Eventos
-document.getElementById('cadastrarAluno')
-    .addEventListener('click', openModal)
+document.getElementById('cadastrarAluno').addEventListener('click', openModal)
 
-document.getElementById('modalClose')
-    .addEventListener('click', closeModal)
+document.getElementById('modalClose').addEventListener('click', closeModal)
 
 // modal apagar
-document.getElementById('modalClose2')
-    .addEventListener('click', closeModal2)
+document.getElementById('modalClose2').addEventListener('click', closeModal2)
 
-document.getElementById('salvar')
-    .addEventListener('click', saveAluno)
+document.getElementById('salvar').addEventListener('click', saveAluno)
 
-document.querySelector('#tableAluno>tbody')
-    .addEventListener('click', editDelete)
+document.querySelector('#tableAluno>tbody').addEventListener('click', editDelete)
 
-document.getElementById('cancelar')
-    .addEventListener('click', closeModal)
+document.getElementById('cancelar').addEventListener('click', closeModal)
 
 // modal apagar
-document.getElementById('cancelar2')
-    .addEventListener('click', closeModal2)
+document.getElementById('cancelar2').addEventListener('click', closeModal2)

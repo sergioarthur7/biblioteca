@@ -26,20 +26,3 @@ sidebarToggle2.addEventListener("click", () => {
         localStorage.setItem("status", "open");
     }
 });
-
-
-// Modal perfil
-
-function menuToggle(){
-    const toggleMenu = document.querySelector('.menu');
-    toggleMenu.classList.toggle('active');
-}
-
-const divUserButtonAndDropdown = document.querySelector('.actionimg');
-const dropdown = document.querySelector('.menu');
-
-document.addEventListener('click', function (event) {
-    if (!divUserButtonAndDropdown.contains(event.target)) {
-        dropdown.classList.remove('active');
-    }
-})
