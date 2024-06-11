@@ -17,8 +17,10 @@
 body{
     width: 100%;
     height: 100%;
-    background: #066b7c;
+    background: #01853e;
     overflow: hidden;
+    background-image: url('../backimg.jpg');
+    background-size: cover; 
 }
 
 /* A regra para a div container no HTML*/
@@ -43,7 +45,7 @@ body{
 /* Essa regra cria uma faixa na parte superior da caixa, aparecendo um titulo na tela de login*/
 .wrapper .title{
     line-height: 80px;
-    background: gray ;
+    background: #01853e ;
     padding-left: 20px;
     border-radius: 7px 7px 0 0;
     font-size: 25px;
@@ -51,6 +53,22 @@ body{
     font-weight: 600;
     font-family: 'Montebello', Times, serif;
 }
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #01853e;/* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Ajuste o valor de opacidade conforme necessário */
+    z-index: -1;
+}
+
 /* Essa regra direciona o formulario dentro da tela de login*/
 .wrapper form{
     padding: 30px 20px 25px 20px;
@@ -82,7 +100,7 @@ bordas entre outros*/
     width: 47px;
     height: 100%;
     font-size: 20px;
-    background: gray;
+    background: #01853e;
     box-shadow: 0 4px 2px -2px rgba(0,0,0,0.25);
     border-radius: 5px 0 0 5px;
     display: flex;
@@ -96,7 +114,7 @@ bordas entre outros*/
 }
 
 .wrapper form .pass p{
-    color: gray;
+    color: rgb(128, 128, 128);
     font-size: 17px;
     text-decoration: none;
     font-family: 'Montebello', Times, serif;
@@ -113,7 +131,7 @@ bordas entre outros*/
     font-size: 18px;
     font-weight: 500;
     padding-left: 0;
-    background: gray;
+    background: #01853e;
     border: 1px solid lightgray;
     cursor: pointer;
 }

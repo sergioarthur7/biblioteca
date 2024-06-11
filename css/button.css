@@ -11,20 +11,23 @@
 }
 
 .button.blue{
-    background-color: #159fe4;
+    background-color: #e41515;
 }
 
 button.green{
-    background-color: #045c09;
+    background-color: #01853e;
 }
 
+.bred {
+    background-color: red;
+}
 
 button.red{
     background-color: #FF4949;
 }
 
 .button:hover{
-    box-shadow: inset 200px 0 0 #00000055;
+    box-shadow: inset 200px 0 0 #00000047;
 }
 
 @media(max-width:480px){
