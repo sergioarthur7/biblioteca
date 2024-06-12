@@ -114,7 +114,7 @@ nav .menu-items {
 }
 
 .nav-links li:hover {
-    border-left: 3px solid #00aaff;
+    border-left: 3px solid #01853e;
     font-weight: bold;
     background-image: linear-gradient(to right, #181E22, #181E22, #2C383D) !important;
     background: transparent;
